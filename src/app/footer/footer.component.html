@@ -1,0 +1,18 @@
+<footer>
+	{{nombre}}
+	<div class="row">
+		<div class="col-md-4">
+			<div class="footer-right">
+				<a [href]="footerinfo.facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+				<a [href]="footerinfo.twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+				<a [href]="footerinfo.github_profile" target="_blank"><i class="fa fa-github"></i></a>
+			</div>
+			<div class="footer-left">
+				<p>{{nombre.autor}}</p>
+				<p><b><a [href]="footerinfo.github_repo" target="_blank">This Project on GitHub</a></b></p>
+				<p>Code licensed under <b><a [href]="footerinfo.license" target="_blank">MIT License</a></b></p>
+			</div>
+		</div>
+	</div>
+</footer> 
+
