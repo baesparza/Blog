@@ -1,0 +1,18 @@
+<h2 class="animated fadeIn fast"><small> Resultados de busqueda de: </small>{{ buscar }}</h2>
+<hr>
+<div class="card-columns animated fadeIn row" *ngIf="proyectosArr.length == 0; else searched" >
+  <div class="col-md-12">
+    <div class="alert" role="alert">
+      No se encontraron resultados relacionados con la busqueda de : {{ buscar }}
+    </div>
+  </div>
+</div>
+<ng-template #searched>
+  <div class="card-columns animated fadeIn">
+    <app-card 
+    [proyecto]="proyecto_"
+    [index]="i"
+    *ngFor="let proyecto_ of proyectosArr; let i = index">
+    </app-card>
+  </div>
+</ng-template>

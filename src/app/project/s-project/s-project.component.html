@@ -1,0 +1,41 @@
+<h3 class="animated fadeIn fast">{{ proyecto.titulo | uppercase }}</h3>
+<hr>
+<div class="container animated fadeIn">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="info-s">
+          <div class="row">
+              <div class="col-md-4">
+                  <th><b>Lenguaje:</b></th>
+              </div>
+              <div class="col-md-8">
+                  <td>{{ proyecto.lenguaje }}</td>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4">
+                  <th><b>Informacion:</b></th>
+              </div>
+              <div class="col-md-8">
+                  <td>{{ proyecto.info }}</td>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <a target="_blank" [href]="proyecto.repositorio" class="btn btn-outline my-2 my-sm-0 btn-block" role="button"><i class="fa fa-github"></i> Git-Hub</a>
+        </div>
+        <div class="col-md-6">
+          <a [routerLink]="['/projects']" class="btn btn-outline my-2 my-sm-0 btn-block" role="button"> Regresar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div *ngFor="let gist of proyecto.gist;">
+          {{gist}}
+          <!--<script [src]="gist"></script>-->
+      </div>
+    </div>
+  </div>
+</div>

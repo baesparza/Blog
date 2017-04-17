@@ -5,4 +5,5 @@ export interface AUTORINFO {
     autor : string
     github_repo : string,
     license : string,
+    portfolio: string
 }

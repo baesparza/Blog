@@ -1,0 +1,28 @@
+.card{
+    background-color: rgb(25, 30, 35);
+    color:rgb(240, 240, 240);
+    margin-bottom: 20px;
+}
+
+.text-muted{
+    color: rgb(200, 200, 200);
+}
+
+.list-group-item{
+    background-color: rgb(25, 30, 35);
+    color:rgb(240, 240, 240);
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(224,224,224);
+}
+
+.btn-outline {
+    color: rgb(224, 224, 224);
+    background-image: none;
+    background-color: transparent;
+    border-color: rgb(224, 224, 224);
+}

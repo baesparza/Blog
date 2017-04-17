@@ -2,37 +2,48 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { AngularFireModule } from 'angularfire2';
 
+//Servicios
+import { ProjectService } from "./project/project.service";
+import { FooterService } from "./general/footer/footer.service";
+
+//Rutas
+import { APP_ROUTING } from "./app.routes";
+
+//Components
 import { AppComponent } from './app.component';
-import { FooterComponent } from "./footer/footer.component";
-import { MainComponent } from './main/main.component';
-import { CardComponent } from './card/card.component';
+import { FooterComponent } from "./general/footer/footer.component";
+import { MainComponent } from './Home/main/main.component';
+import { CardComponent } from './project/card/card.component';
+import { NavbarComponent } from './general/navbar/navbar.component';
+import { AboutComponent } from './About/about/about.component';
+import { ProjectComponent } from './project/project/project.component';
+import { SProjectComponent } from './project/s-project/s-project.component';
+import { SearchComponent } from './project/search/search.component';
 
-
-export const firebaseConfig = {
-  apiKey: "AIzaSyDpLVjGmuNX-eXyomSV7S-7DvuVQQozafY",
-  authDomain: "blog-ced0f.firebaseapp.com",
-  databaseURL: "https://blog-ced0f.firebaseio.com",
-  projectId: "blog-ced0f",
-  storageBucket: "blog-ced0f.appspot.com",
-  messagingSenderId: "1093014395865"
-};
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     MainComponent,
-    CardComponent
+    CardComponent,
+    NavbarComponent,
+    AboutComponent,
+    ProjectComponent,
+    SProjectComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AngularFireModule.initializeApp(firebaseConfig)
+    APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    ProjectService,
+    FooterService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

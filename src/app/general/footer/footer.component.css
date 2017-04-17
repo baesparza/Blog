@@ -15,11 +15,6 @@ footer{
 	margin: 2px;
 }
 
- .footer-right{
-	margin-top: 2px;
-	max-width: 180px;
-}
-
  .footer-right a{
 	display: inline-block;
 	width: 35px;
@@ -32,13 +27,25 @@ footer{
 	text-align: center;
 	line-height: 35px;
 
-	margin-left: 3px;
-	margin-bottom: 15px;
+	margin: 10px 0px;
 }
 
 .footer-left a {
     color: #f1f1f1 !important;
     text-decoration: none;
-	
 }
 
+.footer-left{
+	text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .footer-left{
+		text-align: center;
+	}
+
+	.footer-right{
+		text-align: center;
+	}
+}

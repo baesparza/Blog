@@ -1,0 +1,10 @@
+.btn-outline {
+    color: rgb(224, 224, 224);
+    background-image: none;
+    background-color: transparent;
+    border-color: rgb(224, 224, 224);
+}
+
+.info-s{
+    margin: 20px 0px;
+}

@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="card-block">
+    <h5 class="card-title">{{ proyecto.titulo }}</h5>
+    <hr>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">[{{ proyecto.lenguaje }}]</li>
+    </ul>
+    <p class="card-text">{{ proyecto.info }}</p>
+    <!--<a [routerLink]="['/project',i]" class="btn btn-outline my-2 my-sm-0 btn-block" role="button"><i class="fa fa-github"></i> Git-Hub</a>-->
+    <a (click)="verProyecto(i)" class="btn btn-outline my-2 my-sm-0 btn-block" role="button">Source code...</a>
+  </div>
+</div>

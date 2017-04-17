@@ -1,7 +1,8 @@
-export interface card {
+export interface PROYECTO {
     titulo:string,
     lenguaje:string,
     repositorio?:string,
     info?:string,
-    img?:string
+    gist:String[]
 }
+

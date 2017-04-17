@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from "@angular/router";
 
-import { card } from "./Card";
+import { PROYECTO } from "../Card";
 
 @Component({
   selector: 'app-card',
@@ -10,11 +11,16 @@ import { card } from "./Card";
 export class CardComponent implements OnInit {
 
   @Input()
-  private item: card;
+  private proyecto: PROYECTO;
+  @Input('index') i;
 
-  constructor() { }
+  constructor(private router : Router) { }
 
   ngOnInit() {
+  }
+
+  verProyecto(idx : number){
+    this.router.navigate( ['/project',idx] );
   }
 
 }
