@@ -8,3 +8,8 @@
 .info-s{
     margin: 20px 0px;
 }
+
+.my-2 {
+    margin-top: .5rem!important;
+    margin-bottom: .5rem!important;
+}

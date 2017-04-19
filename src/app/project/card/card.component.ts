@@ -11,7 +11,7 @@ import { PROYECTO } from "../Card";
 export class CardComponent implements OnInit {
 
   @Input()
-  private proyecto: PROYECTO;
+  proyecto: PROYECTO;
   @Input('index') i;
 
   constructor(private router : Router) { }
